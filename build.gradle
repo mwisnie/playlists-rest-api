@@ -27,7 +27,9 @@ repositories {
 dependencies {
 	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile("io.jsonwebtoken:jjwt:0.7.0")
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.security:spring-security-test')
